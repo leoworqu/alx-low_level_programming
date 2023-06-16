@@ -15,18 +15,18 @@
 
 int main(void)
 {
-        char alphabet = 'a'
-	char alphabetCapital = 'A';
+        char alphabet = 'a';
+	char capital = 'A';
 
         while (alphabet <= 'z')
         {
                 putchar(alphabet);
                 alphabet++;
         }
-	while (alphabetCapital <= 'Z')
+	while (capital <= 'Z')
         {
-                putchar(alphabetCapital);
-                alphabetCapital++;
+                putchar(capital);
+                capital++;
         }
         putchar('\n');
         return (0);
