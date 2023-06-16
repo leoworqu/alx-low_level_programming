@@ -22,7 +22,7 @@ int main(void)
 	{
 		putchar(alphabet);
 		alphabet++;
-        }
+	}
 	while (capital <= 'Z')
 	{
 		putchar(capital);
