@@ -8,12 +8,14 @@
 
 void print_alphabet(void)
 {
-	
-/**
- * prints the alphabet
- */
-	
+	/**
+	 * prints the alphabet
+	 */
 	char i = 'a';
+	
+	/**
+	 * prints the alphabet
+ 	 */
 
 	while (i <= 'z')
 	{
