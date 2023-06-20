@@ -13,12 +13,24 @@ void print_to_98(int n)
 	{
 		if (n != 98)
 		{
-			printf ("%d,", n);
+			printf (" %d,", n);
 		}
 		else
 		{
 			printf ("%d", n);
 		}
 		n++;
+	}
+	while (n >= 97)
+	{
+		if (n != 98)
+		{
+			printf (" %d,", n);
+		}
+		else
+		{
+			printf ("%d", n);
+		}
+		n--;
 	}
 }
