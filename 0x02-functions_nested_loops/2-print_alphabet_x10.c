@@ -1,12 +1,17 @@
 #include "main.h"
 
 /**
+ * main - check the code.
  * prints alphabet 10 times
  * Return: Always 0.
  */
 
+/**
+ * prints alphabet 10 times
+ *
+ */
+
 void print_alphabet_x10(void)
-/** Prints alphabet 10 times */
 {
 	int count = 0;
 
