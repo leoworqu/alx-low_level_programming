@@ -8,8 +8,8 @@
 
 void print_alphabet_x10(void)
 /**
- * main - check the code.
- *
+ * 
+ * Prints alphabet 10 times
  * Return: Always 0.
  */
 {
