@@ -7,7 +7,7 @@
  */
 
 void print_alphabet_x10(void)
-// Prints alphabet 10 times
+/* Prints alphabet 10 times */
 {
 	int count = 0;
 
