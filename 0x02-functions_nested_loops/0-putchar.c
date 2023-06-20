@@ -1,5 +1,4 @@
 #include "main.h"
-#include "unistd.h"
 
 /**
  * main - check the code
@@ -8,8 +7,6 @@
  *
  *
  */
-
-int _putchar(char c);
 
 int main(void)
 {
@@ -25,7 +22,3 @@ int main(void)
 	return (0);
 }
 
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
