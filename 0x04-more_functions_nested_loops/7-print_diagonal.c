@@ -17,11 +17,11 @@ void print_diagonal(int n)
 		{
 			if (j == i)
 			{
-				_putchar (' ');
-			}
-			else if (i > j)
-			{
 				_putchar ('\\');
+			}
+			else if (j < i)
+			{
+				_putchar (' ');
 			}
 			j++;
 		}
