@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  */
 
-int main()
+int main(void)
 {
 	long long num = 612852475143;
 	long long factor = 2;
@@ -25,6 +25,6 @@ int main()
 		}
 	}
 
-	printf("%lld\n", largest_factor);
-	return 0;
+	printf ("%lld\n", largest_factor);
+	return (0);
 }
