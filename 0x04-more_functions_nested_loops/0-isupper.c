@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * Description: Checks weather the input c is Upercase 
  *
- * Return: Always 0.
+ * Return: 1 if True
+ * Return: 0 if false
  */
 
 int _isupper(int c)
