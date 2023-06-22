@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -35,4 +36,5 @@ int main(void)
 		i++;
 	}
 	printf("\n");
+	return (0);
 }
