@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * dest is the destnation src is string to be contacinated to dest. 
- * ptr is the pointer to dest to count and store location.
+ * @dest is the destnation src is string to be contacinated to dest. 
+ * @ptr is the pointer to dest to count and store location.
  *
- * return dest`
+ * _strncat - concatenate two strings
+ * return: dest
  *
  */
 
