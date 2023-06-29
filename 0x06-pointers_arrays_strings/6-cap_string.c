@@ -16,14 +16,13 @@ char *cap_string(char *str)
 		{
 			i++;
 		}
-		if (str[i] == ' ' ||
-				str[i] == '\t' ||
+		if (str[i] == ' ' || str[i] == '\t' ||
 			str[i] == '\n' || str[i] == ',' || str[i] == ';' ||
 			str[i] == '.' || str[i] == '!' ||
 			str[i] == '?' || str[i] == '"' || str[i] == '(' ||
 			str[i] == ')' || str[i] == '{' || str[i] == '}' || i = 0)
 		{
-			str[i] -= 32;
+			str[i] = str[i] - 32;
 		}
 		i++;
 	}
