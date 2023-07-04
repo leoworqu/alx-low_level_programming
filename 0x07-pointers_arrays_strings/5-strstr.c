@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (*sub == '\0')
 		{
-			return start;
+			return (start);
 		}
 		haystack = start + 1;
 	}
