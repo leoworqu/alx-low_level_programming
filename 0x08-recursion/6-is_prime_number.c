@@ -1,7 +1,7 @@
 #include "main.h"
 
 int is_prime_number(int n, int i) {
-    // Base cases
+
     if (n <= 1) {
         return 0;
     }
@@ -11,7 +11,5 @@ int is_prime_number(int n, int i) {
     if (n % i == 0) {
         return 0;
     }
-
-    // Recursive case
     return is_prime_number(n, i + 1);
 }
