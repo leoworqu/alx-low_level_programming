@@ -1,4 +1,6 @@
 #include "main.h"
+#include <string.h>
+#include <stdlib.h>
 
 int is_palindrome(char *s) {
     int length = strlen(s);
