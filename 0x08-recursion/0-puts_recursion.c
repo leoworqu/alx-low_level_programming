@@ -1,8 +1,8 @@
 #include "main.h"
 
 /*
- * @s a character
  * _puts_recursion - recursive function to print strings line by line
+ * @s: character string
  *
  */
 
