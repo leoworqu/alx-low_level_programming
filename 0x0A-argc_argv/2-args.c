@@ -3,17 +3,20 @@
 
 /**
  * main - Entry point of the program
- * @argc: The number of command-line arguments passed
+ * @argc: The number of command-line arguments
  * @argv: An array of strings containing the command-line arguments
  *
- * Return: 0 on success
+ * Return: 0 (Success)
  */
 
 int main(int argc, char *argv[])
 {
-	(void) argv;
+	int count;
 
-	printf("%d\n", argc - 1);
+	for (count = 0; count < argc; count++)
+	{
+		printf("%s\n", argv[count]);
+	}
 
 	return (0);
 }
