@@ -3,6 +3,20 @@
 #include <string.h>
 #include "dog.h"
 
+/**
+ * new_dog - Creates a new dog object.
+ * @name: Pointer to the name of the dog.
+ * @age: Age of the dog.
+ * @owner: Pointer to the owner of the dog.
+ *
+ * Return: Pointer to the newly created dog object, or NULL if the function fails.
+ *
+ * Description: This function creates a new dog object by allocating memory and
+ * copying the provided name and owner strings. It returns a pointer to the
+ * newly created dog object. If the function fails to allocate memory or if any
+ * of the input parameters are NULL, it returns NULL.
+ */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *newDog;
