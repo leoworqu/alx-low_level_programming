@@ -9,7 +9,7 @@
  * @age: Age of the dog.
  * @owner: Pointer to the owner of the dog.
  *
- * Return: Pointer to the newly created dog object, or NULL if the function fails.
+ * Return: Point to the new created dog object, or NULL if the function fails.
  *
  * Description: This function creates a new dog object by allocating memory and
  * copying the provided name and owner strings. It returns a pointer to the
