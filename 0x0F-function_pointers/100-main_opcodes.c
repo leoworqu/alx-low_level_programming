@@ -3,14 +3,14 @@
 
 /**
  * main - prints its own opcodes
- * @argc: number of arguments
- * @argv: array of arguments
+ * @argc:  arguments
+ * @argv:  arguments
  *
  * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
-	int bytes, i;
+	int bytes, j;
 	char *arr;
 
 	if (argc != 2)
@@ -29,14 +29,14 @@ int main(int argc, char *argv[])
 
 	arr = (char *)main;
 
-	for (i = 0; i < bytes; i++)
+	for (j = 0; j < bytes; j++)
 	{
-		if (i == bytes - 1)
+		if (j == bytes - 1)
 		{
-			printf("%02hhx\n", arr[i]);
+			printf("%02hhx\n", arr[j]);
 			break;
 		}
-		printf("%02hhx ", arr[i]);
+		printf("%02hhx ", arr[j]);
 	}
 	return (0);
 }
