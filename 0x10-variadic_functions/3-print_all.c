@@ -3,59 +3,45 @@
 #include <stdio.h>
 
 /**
- * print_all - Prints anything based on the given format
- * @format: The format of the arguments passed to the function
- *            c: char
- *            i: integer
- *            f: float
- *            s: char * (if the string is NULL, print (nil) instead)
- *            any other char should be ignored
+ * print_all - Prints values based on the given format
+ * @format: The format string specifying the types of values to print
  *
- * Return: void
+ * Description:
+ * This function takes a format string and a variable number of arguments, and
+ * prints the values based on the format string. The format string can contain
+ * the following specifiers: 'c' (for characters), 'i' (for integers), 'f'
+ * (for floats), and 's' (for strings). Any other specifiers will be ignored.
+ * The function loops through the format string and retrieves the corresponding
+ * values from the argument list using the va_arg macro. The retrieved values
+ * are then printed to the standard output with appropriate formatting. If a
+ * NULL string is encountered, it is printed as "(nil)". The function does not
+ * return any value.
+ *
+ * Return: None
  */
 
-void print_all(const char * const format, ...)
+void print_all(const char *format, ...)
 {
-	int i = 0;
-	int n;
-	char c;
-	float f;
-	char *s;
 	va_list args;
-
 	va_start(args, format);
 
-	while (format && format[i])
+	while (format && *format)
 	{
-		switch (format[i])
+		if (*format == 'c')
+			printf("%c", va_arg(args, int));
+		else if (*format == 'i')
+			printf("%d", va_arg(args, int));
+		else if (*format == 'f')
+			printf("%f", va_arg(args, double));
+		else if (*format == 's')
 		{
-			case 'c':
-				c = va_arg(args, int);
-				printf("%c", c);
-				break;
-			case 'i':
-				n = va_arg(args, int);
-				printf("%d", n);
-				break;
-			case 'f':
-				f = va_arg(args, double);
-				printf("%f", f);
-				break;
-			case 's':
-				s = va_arg(args, char *);
-				if (s == NULL)
-					printf("(nil)");
-				else
-					printf("%s", s);
-				break;
-			default:
-				i++;
-				continue;
+			char *s = va_arg(args, char*);
+			printf("%s", s ? s : "(nil)");
 		}
-		if (format[i + 1] != '\0' && (format[i] == 'c' || format[i] == 'i' ||
-					   format[i] == 'f' || format[i] == 's'))
+		if (*(format + 1) && (*format == 'c' || *format == 'i' ||
+					*format == 'f' || *format == 's'))
 			printf(", ");
-		i++;
+		format++;
 	}
 	printf("\n");
 	va_end(args);
