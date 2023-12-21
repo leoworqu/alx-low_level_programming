@@ -1,0 +1,6 @@
+# MakeFile: compile every single line regardless of whatever is
+# target: dependencies
+#	action
+
+all: school.c main.c m.h
+		gcc main.c school.c -o school
